@@ -17,7 +17,7 @@ const LoginPage = () => {
       let role = "student";
       if (email.includes("admin")) role = "admin"; // @nkosi just to make app tests
       
-      else if (email.includes("")) role = "lecturer";
+      else if (email.includes("L22")) role = "lecturer";
       else if (email.includes("S229036821")) role = "student";
       // Redirect based on role
       if (role === "admin") navigate("/admin");
