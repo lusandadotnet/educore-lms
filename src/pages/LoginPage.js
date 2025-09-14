@@ -13,10 +13,7 @@ const LoginPage = () => {
     setError("");
     // Simulate backend login
     try {
-      // Replace with actual API call
-      // const response = await fetch('/api/login', { ... })
-      // const data = await response.json();
-      // Example mock response:
+      // @nkosi
       let role = "student";
       if (email.includes("admin")) role = "admin"; // @nkosi just to make app tests
       
